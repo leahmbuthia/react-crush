@@ -1,4 +1,6 @@
+import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+
 
 function App() {
   
@@ -6,6 +8,7 @@ function App() {
   return (
     <div className="align-middle">
     <Navbar/>
+    <Hero/>
     </div>
   )
 }

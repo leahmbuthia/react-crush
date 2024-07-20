@@ -1,17 +1,31 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <div className='bg-indigo-700 border-b border-indigo-500'>
+    <nav className='bg-indigo-700 border-b border-indigo-500'>
         <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-            <div className='flex h-2 items-center justify-between md:items-stretch md:justify-start'>
-                <a className='flex flex-1 items-center mr-4' href='/index.html'>
-                </a>
+            <div className='flex h-20 items-center justify-between md:items-stretch md:justify-start'>
+            {/* <NavLink className='flex flex-shrink-0 items-center mr-4' to='/'> */}
+                <img className='h-10 w-auto ' src={logo} alt='React Jobs'></img>
+                <span className='hidden md:block text-white text-2xl font-bold ml-2'>
+                  React Jobs
+                </span>
+                <div className='md:ml-auto'>
+                  <div className='flex space-x-2'> 
+                    <a className='text-black' href='/index.html' >Home</a>
+                    <a className='text-white' href='/index.html' >Jobs</a>
+                    <a className='text-white' href='/index.html' >Add Job</a>
+                  
+
+                  </div>
+                </div>
+                
                 
             </div>
 
         </div>
-    </div>
+    </nav>
   )
 }
 
